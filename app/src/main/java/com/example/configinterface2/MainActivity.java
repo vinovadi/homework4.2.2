@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         books.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast toast = Toast.makeText(MainActivity.this, "Нажмите \"Удалить\" чтобы удалить =)", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(MainActivity.this, "Нажмите \"Удалить\" чтобы удалить "+  adapter.getItem(position).getTitle(), Toast.LENGTH_SHORT);
                 toast.show();
                 return true;
             }
